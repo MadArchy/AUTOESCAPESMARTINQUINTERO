@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SoldaTech Pro - Expertos en soldadura y reparación de silenciadores automotrices. Más de 15 años de experiencia.">
+    <title>SoldaTech Pro - Soldadura de Precisión para Silenciadores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                        <span class="pulse-dot"></span>
+                    </div>
+                    <div class="logo-text">
+                        <h1>AUTOESCAPES MARTIN QUINTERO</h1>
+                        <p>Soldadura de Precisión</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#galeria" class="nav-link">Galería</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <button class="btn btn-primary cta-desktop" onclick="scrollToSection('contacto')">
+                    Solicitar Cotización
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a href="#inicio" class="mobile-nav-link">Inicio</a>
+                    <a href="#servicios" class="mobile-nav-link">Servicios</a>
+                    <a href="#galeria" class="mobile-nav-link">Galería</a>
+                    <a href="#nosotros" class="mobile-nav-link">Nosotros</a>
+                    <a href="#contacto" class="mobile-nav-link">Contacto</a>
+                    <button class="btn btn-primary w-full" onclick="scrollToSection('contacto')">
+                        Solicitar Cotización
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1563229708-55d0a600b01d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWxkaW5nJTIwc3BhcmtzJTIwd29ya3Nob3B8ZW58MXx8fHwxNzYyMjkzNzExfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Soldadura profesional">
+            <div class="hero-overlay"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                    <span>Expertos en Soldadura Automotriz</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Soldadura de
+                    <span class="gradient-text">Precisión, Potencia</span>
+                    y Durabilidad
+                </h1>
+
+                <p class="hero-description">
+                    Especialistas en reparación, fabricación y montaje de silenciadores 
+                    y sistemas de escape. Calidad artesanal, tecnología de soldadura 
+                    TIG/MIG y más de 15 años de experiencia.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('servicios')">
+                        Ver Servicios
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('contacto')">
+                        Contactar Ahora
+                    </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value gradient-text">15+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value gradient-text">5000+</div>
+                        <div class="stat-label">Trabajos Realizados</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value gradient-text">100%</div>
+                        <div class="stat-label">Satisfacción Cliente</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services-section">
+        <div class="section-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nuestros Servicios</span>
+                <h2 class="section-title">
+                    Soluciones Técnicas
+                    <span class="gradient-text">de Alta Precisión</span>
+                </h2>
+                <p class="section-description">
+                    Servicios especializados en soldadura y sistemas de escape con tecnología 
+                    de última generación y mano de obra calificada
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Reparación de Silenciadores</h3>
+                    <p>Soldadura especializada para reparar grietas, fugas y daños en silenciadores de todo tipo de vehículos.</p>
+                    <ul class="service-features">
+                        <li>Soldadura TIG/MIG</li>
+                        <li>Reparación de fugas</li>
+                        <li>Garantía de calidad</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">Más información →</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3>Fabricación Personalizada</h3>
+                    <p>Diseño y fabricación de silenciadores a medida según las especificaciones exactas de tu vehículo.</p>
+                    <ul class="service-features">
+                        <li>Diseño a medida</li>
+                        <li>Materiales premium</li>
+                        <li>Acabado profesional</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">Más información →</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6m-9-9h6m6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3>Montaje de Escapes Deportivos</h3>
+                    <p>Instalación profesional de sistemas de escape deportivos para mejorar el rendimiento y sonido.</p>
+                    <ul class="service-features">
+                        <li>Instalación experta</li>
+                        <li>Ajuste preciso</li>
+                        <li>Optimización de flujo</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">Más información →</a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3>Soldadura TIG/MIG</h3>
+                    <p>Técnicas avanzadas de soldadura para garantizar uniones resistentes y duraderas en todo tipo de metales.</p>
+                    <ul class="service-features">
+                        <li>Acero inoxidable</li>
+                        <li>Aluminio</li>
+                        <li>Alta resistencia</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">Más información →</a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M3 12h1m16 0h1M12 3v1m0 16v1M5.6 5.6l.7.7m11.4 11.4l.7.7M18.4 5.6l-.7.7M6.3 17.7l-.7.7"/>
+                        </svg>
+                    </div>
+                    <h3>Modificaciones de Escape</h3>
+                    <p>Adaptaciones y mejoras en sistemas de escape completos para optimizar el rendimiento del motor.</p>
+                    <ul class="service-features">
+                        <li>Mejora de potencia</li>
+                        <li>Reducción de peso</li>
+                        <li>Sonido personalizado</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">Más información →</a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Diagnóstico y Mantenimiento</h3>
+                    <p>Revisión completa del sistema de escape, detección de fugas y mantenimiento preventivo.</p>
+                    <ul class="service-features">
+                        <li>Inspección completa</li>
+                        <li>Detección de fugas</li>
+                        <li>Prevención de daños</li>
+                    </ul>
+                    <a href="#contacto" class="service-link">Más información →</a>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="services-cta">
+                <p>¿No encuentras el servicio que necesitas?</p>
+                <button class="btn btn-primary" onclick="scrollToSection('contacto')">
+                    Consultar Servicio Personalizado
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery-section">
+        <div class="gallery-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nuestro Trabajo</span>
+                <h2 class="section-title">
+                    Galería de
+                    <span class="gradient-text">Trabajos Realizados</span>
+                </h2>
+                <p class="section-description">
+                    Explora algunos de nuestros proyectos más destacados y la calidad 
+                    artesanal que ponemos en cada trabajo
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563229708-55d0a600b01d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Soldadura TIG de Precisión">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Proceso</span>
+                        <h3>Soldadura TIG de Precisión</h3>
+                    </div>
+                    <div class="gallery-badge">Proceso</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1759419282068-eb664e0f0a17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Silenciadores Terminados">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Resultado</span>
+                        <h3>Silenciadores Terminados</h3>
+                    </div>
+                    <div class="gallery-badge">Resultado</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1651133008947-3aba55fdb3b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Trabajo en Metal">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Proceso</span>
+                        <h3>Trabajo en Metal</h3>
+                    </div>
+                    <div class="gallery-badge">Proceso</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1698998882494-57c3e043f340?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Taller Profesional">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Instalaciones</span>
+                        <h3>Taller Profesional</h3>
+                    </div>
+                    <div class="gallery-badge">Instalaciones</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1689250912749-c5c1e2e8d4f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Acabado Metálico">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Detalle</span>
+                        <h3>Acabado Metálico</h3>
+                    </div>
+                    <div class="gallery-badge">Detalle</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1582489851864-4b4bddaf6a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Equipamiento de Soldadura">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Equipo</span>
+                        <h3>Equipamiento de Soldadura</h3>
+                    </div>
+                    <div class="gallery-badge">Equipo</div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-outline">Ver Más Trabajos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about-section">
+        <div class="about-bg-blur blur-1"></div>
+        <div class="about-bg-blur blur-2"></div>
+
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1698998882494-57c3e043f340?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Taller profesional">
+                    <div class="about-badge">
+                        <div class="badge-value">15+</div>
+                        <div class="badge-label">Años de Experiencia</div>
+                    </div>
+                    <div class="about-decoration deco-1"></div>
+                    <div class="about-decoration deco-2"></div>
+                </div>
+
+                <div class="about-text">
+                    <span class="section-badge">Sobre Nosotros</span>
+                    <h2 class="section-title">
+                        Expertos en
+                        <span class="gradient-text">Soldadura Automotriz</span>
+                    </h2>
+                    <p>
+                        En <strong>SoldaTech Pro</strong>, somos un taller especializado con más 
+                        de 15 años de experiencia en soldadura y reparación de sistemas de escape 
+                        automotrices.
+                    </p>
+                    <p>
+                        Nuestro compromiso es ofrecer soluciones de la más alta calidad, utilizando 
+                        tecnología de soldadura TIG/MIG de última generación y un equipo de 
+                        profesionales altamente capacitados.
+                    </p>
+                    <p>
+                        Cada proyecto es tratado con precisión artesanal, garantizando durabilidad, 
+                        resistencia y un acabado impecable. Trabajamos con todo tipo de vehículos, 
+                        desde autos particulares hasta vehículos comerciales y deportivos.
+                    </p>
+                    <div class="about-mission">
+                        <p class="mission-title">Nuestra Misión</p>
+                        <p class="mission-text">
+                            Brindar servicios de soldadura de excelencia con honestidad, 
+                            profesionalismo y atención personalizada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Calidad Garantizada</h3>
+                    <p>Cada trabajo cuenta con garantía de calidad y durabilidad en todos los servicios.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"/>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                        </svg>
+                    </div>
+                    <h3>Experiencia Comprobada</h3>
+                    <p>Más de 15 años de trayectoria en el sector automotriz y soldadura especializada.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Equipo Certificado</h3>
+                    <p>Personal técnico altamente capacitado con certificaciones internacionales.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Servicio Rápido</h3>
+                    <p>Tiempos de entrega óptimos sin comprometer la calidad del trabajo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonios</span>
+                <h2 class="section-title">
+                    Lo Que Dicen
+                    <span class="gradient-text">Nuestros Clientes</span>
+                </h2>
+                <p class="section-description">
+                    La satisfacción de nuestros clientes es nuestra mejor carta de presentación
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excelente trabajo en la reparación de mi silenciador. El acabado es perfecto 
+                        y el sonido quedó como nuevo. Muy profesionales y rápidos."
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <p class="author-name">Carlos Rodríguez</p>
+                            <p class="author-vehicle">Honda Civic 2018</p>
+                        </div>
+                        <span class="testimonial-date">Hace 2 semanas</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Me fabricaron un escape personalizado para mi auto deportivo. La calidad es 
+                        excepcional y el precio muy justo. Totalmente recomendados."
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <p class="author-name">María González</p>
+                            <p class="author-vehicle">Toyota Corolla 2020</p>
+                        </div>
+                        <span class="testimonial-date">Hace 1 mes</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Tenía una fuga importante en el escape de mi camioneta. Lo solucionaron en 
+                        el mismo día con soldadura de alta calidad. Muy satisfecho."
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <p class="author-name">Jorge Martínez</p>
+                            <p class="author-vehicle">Ford F-150 2019</p>
+                        </div>
+                        <span class="testimonial-date">Hace 3 semanas</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Servicio impecable. Me explicaron todo el proceso y me dieron garantía. 
+                        El taller está muy bien equipado y el personal es muy amable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <p class="author-name">Ana López</p>
+                            <p class="author-vehicle">Mazda 3 2021</p>
+                        </div>
+                        <span class="testimonial-date">Hace 1 semana</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Llevo años viniendo a este taller. Siempre el mismo nivel de calidad y 
+                        profesionalismo. Son los mejores en soldadura de escapes."
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <p class="author-name">Roberto Sánchez</p>
+                            <p class="author-vehicle">Chevrolet Silverado 2017</p>
+                        </div>
+                        <span class="testimonial-date">Hace 2 meses</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Me instalaron un escape deportivo y quedó perfecto. Mejora notable en el 
+                        rendimiento y el sonido es espectacular. Muy recomendable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div>
+                            <p class="author-name">Patricia Ramírez</p>
+                            <p class="author-vehicle">Nissan Sentra 2019</p>
+                        </div>
+                        <span class="testimonial-date">Hace 3 semanas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="testimonials-stats">
+                <div class="stat-box stat-orange">
+                    <div class="stat-box-value">4.9/5</div>
+                    <div class="stat-box-label">Calificación Promedio</div>
+                </div>
+                <div class="stat-box stat-blue">
+                    <div class="stat-box-value">500+</div>
+                    <div class="stat-box-label">Reseñas Positivas</div>
+                </div>
+                <div class="stat-box stat-yellow">
+                    <div class="stat-box-value">98%</div>
+                    <div class="stat-box-label">Clientes Satisfechos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-bg-blur blur-left"></div>
+        <div class="contact-bg-blur blur-right"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contáctanos</span>
+                <h2 class="section-title">
+                    Solicita Tu
+                    <span class="gradient-text">Cotización Gratis</span>
+                </h2>
+                <p class="section-description">
+                    Estamos listos para atender tus necesidades de soldadura. Contáctanos 
+                    y recibe una cotización sin compromiso
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Av. Industrial 1234, Zona Automotriz</p>
+                            <p class="text-muted">Ciudad, Estado, CP 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+52 (555) 123-4567</p>
+                            <p class="text-muted">WhatsApp disponible</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contacto@soldatechpro.com</p>
+                            <p class="text-muted">Respuesta en 24 horas</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lun - Vie: 8:00 - 18:00</p>
+                            <p class="text-muted">Sáb: 9:00 - 14:00</p>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <div class="whatsapp-card">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <h3>Contacto Directo</h3>
+                        <p>Chatea con nosotros por WhatsApp para atención inmediata</p>
+                        <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+                            Abrir WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nombre Completo *</label>
+                                <input type="text" name="name" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono / WhatsApp *</label>
+                                <input type="tel" name="phone" required placeholder="+52 555 123 4567">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Vehículo</label>
+                                <input type="text" name="vehicle" placeholder="Marca, modelo y año">
+                            </div>
+                            <div class="form-group">
+                                <label>Servicio Requerido</label>
+                                <input type="text" name="service" placeholder="Ej: Reparación de silenciador">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mensaje o Detalles</label>
+                            <textarea name="message" rows="6" placeholder="Describe el problema o servicio que necesitas..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-full">
+                            Enviar Solicitud
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+
+                        <p class="form-disclaimer">
+                            Al enviar este formulario, aceptas que nos pongamos en contacto contigo 
+                            para proporcionarte información sobre nuestros servicios.
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <p>Integración de mapa aquí</p>
+                    <p class="text-muted">Av. Industrial 1234, Zona Automotriz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                            <span class="pulse-dot"></span>
+                        </div>
+                        <div class="logo-text">
+                            <h3>SoldaTech Pro</h3>
+                            <p>Soldadura de Precisión</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Expertos en soldadura y reparación de sistemas de escape automotrices 
+                        con más de 15 años de experiencia.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li>Reparación de Silenciadores</li>
+                        <li>Fabricación Personalizada</li>
+                        <li>Soldadura TIG/MIG</li>
+                        <li>Escapes Deportivos</li>
+                        <li>Modificaciones</li>
+                        <li>Mantenimiento</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Av. Industrial 1234<br>Zona Automotriz<br>Ciudad, Estado, CP 12345</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+52 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>contacto@soldatechpro.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 SoldaTech Pro. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-accent"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
